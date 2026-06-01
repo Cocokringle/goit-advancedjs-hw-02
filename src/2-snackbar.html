@@ -16,10 +16,33 @@
 
     <main>
       <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 3
-        </h1>
         <load src="./partials/back-link.html" />
+
+        <form class="form">
+          <label class="form-label form-label--delay">
+            Delay (ms)
+            <input
+              type="number"
+              name="delay"
+              required
+              class="form-input form-input--delay"
+            />
+          </label>
+
+          <fieldset>
+            <legend class="form-label form-label--state">State</legend>
+            <label class="form-label form-label--state">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label class="form-label form-label--state">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button type="submit">Create notification</button>
+        </form>
       </div>
     </main>
 

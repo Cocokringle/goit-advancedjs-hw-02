@@ -1,0 +1,117 @@
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+}
+
+.form-input--delay {
+  width: 100%;
+  max-width: 360px;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  outline: none;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+}
+
+.form-input--delay:hover {
+  outline: none;
+  border: 1px solid #000000;
+}
+
+.form-input--delay:focus {
+  outline: none;
+  border: 1px solid #4e75ff;
+}
+
+.form-input--delay:disabled {
+  outline: none;
+  background: #fafafa;
+  color: #808080;
+}
+
+.form-label {
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.form-label--delay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form button {
+  width: 100%;
+  margin-top: 24px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background: #6c8cff;
+}
+
+.form button:disabled {
+  color: #989898;
+  background: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.form-label--state {
+  text-align: start;
+}
+
+.form fieldset {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  padding: 24px 48px 8px;
+  box-sizing: border-box;
+}
+
+.form input[type='radio' i] {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  accent-color: #4e75ff;
+}
+
+.form-label--state {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
